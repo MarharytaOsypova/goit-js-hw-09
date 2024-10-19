@@ -1,18 +1,75 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.gallery-item {
+  flex-basis: calc(33% - 20px);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-input  {
+  width: 360px;
+  height: 40px;
+padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.form-textarea {
+  width: 360px;
+    height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+ 
+
+.form-button {
+  max-width: 96px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color:#6C8CFF;;
+}
+
+ .form-input:focus,
+ .form-textarea:focus {
+   outline: none;
+  
+ }
+
+.form-input:hover,
+.form-textarea:hover {
+border-color:rgb(0, 0, 0);
+
+    }
